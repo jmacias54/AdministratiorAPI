@@ -12,11 +12,9 @@ public interface AdministratorService {
 
 	List<Administrator> findAll();
 
-	int insert(Administrator admin);
+	int saveOrUpdate(Administrator admin);
 
-	int update(Administrator admin);
-
-	int delete(Integer idAdmin);
+	void delete(Integer idAdmin);
 
 	Administrator findByID(Integer idAdmin);
 

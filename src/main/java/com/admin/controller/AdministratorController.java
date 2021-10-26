@@ -13,12 +13,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 import com.admin.model.entity.Administrator;
 import com.admin.service.AdministratorService;
 
 import lombok.extern.slf4j.Slf4j;
 
+
+@CrossOrigin
 @RestController
 @RequestMapping("/api/admin")
 @Slf4j

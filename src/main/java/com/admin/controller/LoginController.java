@@ -1,5 +1,6 @@
 package com.admin.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,6 +10,8 @@ import com.admin.model.in.UserIn;
 import com.admin.model.out.UserOut;
 import com.admin.service.UserService;
 
+
+@CrossOrigin
 @RestController
 public class LoginController {
 	
